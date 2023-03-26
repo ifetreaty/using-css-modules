@@ -9,13 +9,8 @@ function App() {
     setUserNames((prevUsers) => {
       const updatedUsers = [
         ...prevUsers,
-        { name: enteredName, age: enteredAge, id: Math.random().toString(), },
+        { name: enteredName, age: enteredAge, id: Math.random().toString() },
       ];
-      // updatedUsers.unshift({
-      //   name: `${enteredName}`,
-      //   age: `${enteredAge}${" years old"}`,
-      //   id: Math.random().toString(),
-      // });
       return updatedUsers;
     });
   };
